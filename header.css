@@ -1,0 +1,172 @@
+
+
+main{
+   
+    flex:1;
+    display: flex;
+    flex-direction: column; 
+    gap: 100px;
+    margin: 0;
+    padding: 100px 0px; 
+    box-sizing: border-box;
+    width: 100%;
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap:10px;
+    border-bottom: 1px solid #eef1f1;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 150px;
+    height: 100px;
+    box-sizing: border-box;
+    z-index: 100;
+   
+}
+
+.logo  {
+    color: #555f62;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li{
+    margin:0px  20px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.order a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    text-decoration: none;
+    color: #182cc0;
+    font-weight: 700;
+    
+}
+
+.order a:hover {
+    color: #779dee;
+}
+
+
+.search-icon {
+    font-size: 1.2em;
+    color: #555f62;
+    text-decoration: none;
+}
+
+.search-icon:hover {
+    color: #779dee;
+}
+
+.language-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #555f62;
+}
+
+.language-select:hover {
+    background-color: #ddd;
+    padding: 0 5px;
+    border-radius: 8px;
+}
+
+.lang-icon {
+    font-size: 1.2em;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+}
+
+.language-select:hover .dropdown {
+    display:block;
+
+}
+
+.dropdown p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.dropdown:hover {
+    background-color: #555f62;
+}
+
+
+
+
+.menu-button{
+    position: fixed;
+    bottom: 40px; 
+    right: 40px; 
+    z-index: 1000; 
+    padding: 15px 17px;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.menu-button:hover{
+    background-color: #555f62;
+}
+
+@media (max-width: 960px ){
+    .nav-links{
+        display: none;
+    }
+    .language-select{
+        display: none;
+    }
+    .menu-button-toggle{
+        display: flex;
+    }
+   
+}
